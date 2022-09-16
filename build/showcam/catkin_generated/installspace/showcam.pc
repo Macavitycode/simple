@@ -1,0 +1,8 @@
+prefix=/home/pi/simple/install
+
+Name: showcam
+Description: Description of showcam
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

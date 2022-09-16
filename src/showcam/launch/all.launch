@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <include file="$(find mavros)/launch/apm2.launch" />
+    <node name="cam_capture_node" pkg="showcam" type="get_cam.py" output="screen" />
+    <node name="show_cam_node" pkg="showcam" type="img_to_buf.py" output="screen" />
+    <node name="mavros_stream_rate" pkg="mavros" type="mavsys" args="rate --all 10" output="screen" />
+    <node name="geotag_node" pkg="showcam" type="geotag.py" output="screen" />
+</launch>

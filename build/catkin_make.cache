@@ -1,0 +1,2 @@
+showcam
+-DCATKIN_DEVEL_PREFIX=/home/pi/simple/devel -DCMAKE_INSTALL_PREFIX=/home/pi/simple/install -G Unix Makefiles

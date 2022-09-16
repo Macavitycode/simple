@@ -1,0 +1,23 @@
+header: 
+  seq: 527
+  stamp: 
+    secs: 1663004872
+    nsecs: 494288128
+  frame_id: "/wgs84"
+fix_type: 1
+lat: 471344832
+lon: 746312079
+alt: 11484920
+eph: 9999
+epv: 9999
+vel: 0
+cog: 0
+satellites_visible: 0
+alt_ellipsoid: 11443673
+h_acc: 4294967295
+v_acc: 3750780160
+vel_acc: 1000008
+hdg_acc: 0
+yaw: 0
+dgps_numch: 255
+dgps_age: 4294967295
