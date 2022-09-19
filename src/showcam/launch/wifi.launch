@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="cam_capture_node" pkg="showcam" type="get_cam.py" output="screen" />
+    <node name="flask_node" pkg="showcam" type="server.py" output="screen" />
+</launch>
