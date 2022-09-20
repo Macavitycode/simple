@@ -40,6 +40,7 @@ class cameraPub:
         if status is not False:
 
             img = cv2.flip(src, 0)
+            img = cv2.flip(img, 1)
 
             img_msg = self.bridge.cv2_to_imgmsg(img, encoding="passthrough")
             self.pub.publish(img_msg)

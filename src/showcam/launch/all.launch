@@ -5,4 +5,5 @@
     <node name="cam_capture_node" pkg="showcam" type="get_cam.py" output="screen" />
     <node name="mavros_stream_rate" pkg="mavros" type="mavsys" args="rate --all 10" output="screen" />
     <node name="geotag_node" pkg="showcam" type="geotag.py" output="screen" />
+    <node name="debug_flask_node" pkg="showcam" type="server.py" output="screen" />
 </launch>

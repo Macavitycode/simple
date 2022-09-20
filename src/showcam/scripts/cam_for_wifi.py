@@ -1,10 +1,7 @@
 #!/bin/env python3
 
 import cv2
-import time
-
 from cv_bridge import CvBridge
-import numpy as np
 
 import rospy
 from sensor_msgs.msg import Image
@@ -27,6 +24,5 @@ class VideoCamera:
         self.img = CvBridge().imgmsg_to_cv2(msg)
 
     def get_frame(self):
-        ret, jpeg = cv.imencode(".jpg", self.img)
-        self.previous_frame = jpeg
+        ret, jpeg = cv2.imencode(".jpg", self.img)
         return jpeg.tobytes()

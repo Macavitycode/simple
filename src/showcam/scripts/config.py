@@ -6,3 +6,4 @@ class config:
 
         self.fps = 10
         self.trig_channel = 6
+        self.streamfps = 10
